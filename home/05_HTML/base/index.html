@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="0" width="700px">
+        <tr>
+            <td>
+                <p><strong>Простая форма поиска с вариантами:</strong></p>
+                
+                <form id="my_form" name="user_data" method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+
+                        <legend>Строка поиска</legend>
+                        
+                        <input type="text" id="text" name="text" size="10">
+                        <input type="submit" value="Искать">
+
+                        <br>
+
+                        <input type="radio" name="stroka" value="site">на сайте
+                        <input type="radio" name="stroka" value="google">в google
+                        
+                        <br>
+
+                        <i>Длина запроса не более 10 символов</i>
+                    </fieldset>
+                </form>
+            </td>
+            
+            <td>
+                <p><strong>Простая форма поиска с вариантами:</strong></p>
+
+                <form id="my_form" name="user_data" method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+
+                        <input type="text" id="text" name="text" autofocus>*
+                        <input type="submit" value="Искать">
+
+                        <br>
+
+                        <input type="radio" name="stroka" value="site">на сайте
+                        <input type="radio" name="stroka" value="google">в google
+
+                        <br>
+
+                        <i>*-обязательное поле</i><br>
+                        <i>Автофокус в поле поиска</i>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>    
+</body>
+</html>
