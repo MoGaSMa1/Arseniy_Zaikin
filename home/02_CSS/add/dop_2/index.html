@@ -45,12 +45,15 @@
 
         .right{
             display: flex;
-            background-color: rgb(118, 120, 122);
-            padding: 20px 0px 0px 0px;
-            margin-bottom: 0.2em;
             flex-direction: column;
             align-self: flex-start;
             justify-content: space-between;
+        }
+
+        .right div{
+            margin-bottom: 0.2em;
+            background-color: rgb(118, 120, 122);
+            padding: 20px 0px 0px 0px;
         }
 
         .down{
@@ -59,7 +62,8 @@
         }
 
         .img{
-            align-self: center;
+            display: flex;
+            justify-content: flex-end;
         }
     </style>
 </head>
@@ -99,6 +103,7 @@
                     margin-bottom
                 </p>
                 <div class="img"><img src="i.png"></div>
+                
             </div>
         </div>
     </div>
