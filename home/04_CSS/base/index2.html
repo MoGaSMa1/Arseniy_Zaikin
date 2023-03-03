@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        table{
+
+            border-collapse: collapse;
+        }
+        tr.main{
+            background-color: rgb(83, 83, 83);
+            border-width: 0px;
+            
+        }
+        .main th{
+            border-style: solid;
+            border-color: white;
+            padding: 5px;
+        }
+        tr.sec:nth-child(2n+1){
+            background-color: rgb(223, 221, 221);
+            margin:0;
+            
+        }
+        tr.sec{
+            border-color: rgb(175, 175, 175);
+            border-style:dotted;
+            border-left-style: none;
+            border-right-style: none;
+            border-width: 1px;
+            
+        }
+        .sec td{
+            border-color: inherit;
+            border-style:dotted;
+            border-right-style: none;
+            border-width: 1px;
+        }
+        tr.sec:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="main">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr class="sec">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr class="sec">
+            <th><div>Петрова Илонна Петровна</div></th>
+            <td><div>Ж</div></td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr class="sec">
+            <th>Сидоров Илья Игоревич</th>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr class="sec">
+            <th>Пупин Федор Федорович</th>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>1811899</td>
+            <td>48151889</td>
+        </tr>
+        <tr class="sec">
+            <th>Крупин Сергей Иванович</th>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>183899</td>
+            <td>98919</td>
+        </tr>
+    </table>
+</body>
+</html>

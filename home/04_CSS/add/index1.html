@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        h1{
+            margin:20px 20px 20px 20px;
+        }
+        div.block{
+            margin-left: 10px;
+            width: 650px;
+            border-color: rgb(186, 187, 187);
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 1px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding-bottom: 10px;
+        }
+        p{
+            text-indent: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        img.list{
+            margin:3px;
+            margin-left: 5px;
+        }
+        div.list{
+            width: 300px;
+            height:30px;
+        }
+        div.first{
+            float:left;
+        }
+        div.flash{
+            display: none;
+            width: 20px;
+            height: 20px;
+        }
+        div.flash img{
+            margin: 5px;
+        }
+        div.list:hover div.flash{
+            display:block;
+            position:relative;
+            float:left;
+            z-index: 1;
+        }
+        a[href$='.doc']::before {
+            content: url(../base/arrow.png);
+        }
+        a[href$='MS']::after {
+            content: url(../base/word.jpg);
+        }
+        a[href$='PDF']::after {
+            content: url(../base/pdf.png);
+        }
+        a[href$='ZIP']::after {
+            content: url(../base/zip.gif);
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+
+    <div class="block">
+        <p>.DOC или .doc (от англ. <a href=".doc">document</a>) - расширение имени файла, используемое для файлов,
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+        обозначения простых тексовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов с разметкой.<br>
+        <a href="MS">Документ MS Word</a></p>
+    </div>
+    <div class="block">
+        <p>Portable Document Format (<a href=".doc">PDF</a>) - межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+        Postscript.<br>
+        <a href="PDF">Документ PDF</a></p>
+    </div>
+    <div class="block">
+        <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <a href=".doc">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+        файлов, которые можно из него извлечь путем распоковки с помощью специальной программы.<br>
+        <a href="ZIP">Архив</a></p>
+    </div>
+
+    <h1>Это список файлов</h1>
+    <div class="list"><div class="first"><img class="list" src="../base/list.jpg"><a class="list" href="#">Документ MS Word</a></div><div class="flash"><img  src="../base/word.jpg"></div></div>
+    <div class="list"><div class="first"><img class="list" src="../base/list.jpg"><a class="list" href="#">Документ PDF</a></div><div class="flash"><img  src="../base/pdf.png"></div></div>
+    <div class="list"><div class="first"><img class="list" src="../base/list.jpg"><a class="list" href="#">Архив</a></div><div class="flash"><img  src="../base/zip.gif"></div></div>
+</body>
+</html>
