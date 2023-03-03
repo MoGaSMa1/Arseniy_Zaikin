@@ -13,9 +13,7 @@
             box-sizing: border-box;
         }
         div.MenuLevel1 { 
-            display: flex;
-            flex-direction: row;
-            margin:10px;
+            margin: 10px;
             
         }
         div.MenuLevel1 > div:hover { 
@@ -31,10 +29,13 @@
             position: relative; 
             cursor: pointer ;
             border-radius: 5px;
+            float: left;
+            width: 100px;
         }
         div.MenuLevel2 { 
             width: 100px; 
-            display: none;
+            height: 0;
+            overflow: hidden;
         }
         div.MenuLevel2 > div { 
             background-color: rgb(184, 184, 184); 
@@ -50,19 +51,16 @@
             left: -1%; 
             top: 105%; 
             z-index: 1;
-            
+            transition: 1s;
+            height: 60px;
         }
 
-        @media all and (max-width: 530px){
+        @media all and (max-width: 720px){
 
                 div.MenuLevel1 { 
-                display: flex;
-                flex-direction: column;
-                margin:10px;
-                
+                width: 100px;
             }
             div.MenuLevel1 > div { 
-                width: 100px;
                 background-color: rgb(184, 184, 184); 
                 border: solid rgb(0, 0, 0) 1px;
                 color: rgb(114, 114, 114);
@@ -72,8 +70,8 @@
             }
             div.MenuLevel2 { 
                 width: 100px; 
-                display: none;
-                
+                height: 0px;
+                overflow: hidden;
             }
             div.MenuLevel2 > div { 
                 background-color: rgb(184, 184, 184); 
@@ -86,7 +84,9 @@
                 position: absolute; 
                 left: 101%; 
                 top: 0%; 
-                z-index: 1 
+                z-index: 1;
+                transition: 1s;
+                height: 60px;
             }
             
         }
@@ -94,9 +94,14 @@
 </head>
 <body>
     <div class='MenuLevel1'>
-        <div>Понедельник</div>
-        <div>
-            Вторник
+        <div>Понедельник
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Вторник
             <div class='MenuLevel2'>
                 <div>Завтрак</div>
                 <div>Обед</div>
@@ -111,8 +116,34 @@
                 <div>Ужин</div>
             </div>
         </div>
-        <div>Четверг</div>
-        <div>Пятница</div>
+        <div>Четверг
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Пятница
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Суббота
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Воскресенье
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
