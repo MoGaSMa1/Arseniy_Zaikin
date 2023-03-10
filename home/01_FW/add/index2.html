@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Foundation Starter Template</title>
+
+    <style>
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        li{
+          list-style-type: circle;
+          color: #000;
+        }
+        .four{
+            color: #1EAEDB;
+        }
+        .four>h2{
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        @media (max-width: 550px) {
+            div.four{
+                margin-bottom: 20px;
+            }
+            div.four li, ul{
+                margin:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HOW-TO: Программа на Python, Часть 2 </h1>
+
+        <div class="row">
+            <div class="four columns">
+                <ul>
+                    <u><li><a href="index1.html">Программа на Python — часть 1</a></li></u>
+                    <u><li><a href="index2.html">Программа на Python — часть 2</a></li></u>
+                    <u><li><a href="index3.html">Программа на Python — часть 3</a></li></u>
+                </ul>
+            </div>
+            <div class="eight columns">
+                <h2>HOW-TO: Программа на Python, Часть 2</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <h2 id="sod">Содержание</h2>
+
+                <ul>
+                    <u><li><a href="#sp">Списки</a></li></u>
+                    <u><li><a href="#com">Комментарии</a></li></u>
+                </ul>
+            </div>
+        
+            <div class="eight columns">
+                <p>
+                    Впрошлом уроке мы рассмотрели простую программу, которая использовала raw_input <br>
+                    для получения ответа пользователя, простые типы переменных и простой цикл «for». В <br>
+                    этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше <br>
+                    программ.  
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <h2 id="sp">Списки</h2>
+                <u><a href="#sod">К содержанию</a></u>
+            </div>
+
+            <div class="eight columns">
+                <p>
+                    Давайте рассмотрим другой тип переменных, который называется списки. В других <br>
+                    языках программирования они называются массивами. Если мы обратимся к аналогии с <br>
+                    коробками для обуви, то массив (список) представляет собой несколько склеенных друг с <br>
+                    другом коробок с одинаковыми вещами. Например, в одной коробке лежат вилки, в <br>
+                    другой — ножи, в третьей — ложки. Посмотрим на простой список— список месяцев. Мы <br>
+                    запрограммируем его так:
+                </p>
+
+                <code>
+                    months =
+                    ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+                </code>
+
+                <p>
+                    Чтобы создать список, мы заключили все значения в квадратные скобки ( '[' и ']' ). Мы <br>
+                    назвали наш список 'months'. Чтобы использовать список, мы дадим команду print <br>
+                    months[0] или months[1] (которые выведут на экран 'Jan' или 'Feb'). Помните: счет <br>
+                    начинается с нуля. Чтобы найти длину списка, можно использовать такую функцию: <br>
+                    <br><code>print len(months)</code><br><br>    
+                    которая вернёт 12.
+                </p>
+
+                <p>Ещё один пример списков — категории в поваренной книге. Например…</p>
+
+                <code>
+                    categories = ['Main dish','Meat','Fish','Soup','Cookies']
+                </code>
+
+                <p>
+                    Таким образом, в categories[0] хранится 'Main dish', а в categories[4] — 'Cookies'. Всё <br>
+                    очень просто. Я уверен, вы сможете придумать много других примеров использования <br>
+                    списков. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <h2 id="com">Комментарии</h2>
+                <u><a href="#sod">К содержанию</a></u>
+            </div>
+
+            <div class="eight columns">
+                <p>
+                    Далее, мы должны обсудить комментарии. Комментарии важны по нескольким причинам. <br>
+                    Они не только говорят вам или другим людям, что вы пытаетесь делать, но и напомнят <br>
+                    вам через полгода, что же вы хотели сделать. Когда вы будете писать много программ, <br>
+                    комментарии станут важными. Также при их помощи вы заставите Python игнорировать <br>
+                    какие-либо части кода. Чтобы закомментировать строку, поставьте перед ней знак '#'. <br>
+                    Например:
+                </p>
+
+                <code>#</code>
+
+                <p>
+                    Это комментарий<br>
+                    <br>
+                    Комментарии можно вставлять в любое место в строке, но помните, что Python
+                    проигнорирует всё, что идёт после '#'.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
