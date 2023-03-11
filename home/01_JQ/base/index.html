@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        table{
+            border-collapse: collapse;
+            min-width: 700px;
+            margin: 20px;
+        }
+        tr.main{
+            background-color: rgb(83, 83, 83);
+            border-width: 0px;
+            
+        }
+        .main th{
+            border-style: solid;
+            border-color: white;
+            padding: 5px;
+        }
+        tr.sec:nth-child(2n+1){
+            background-color: rgb(223, 221, 221);
+            margin:0;
+            
+        }
+        tr.sec{
+            border-color: rgb(175, 175, 175);
+            border-style:dotted;
+            border-left-style: none;
+            border-right-style: none;
+            border-width: 1px;
+            
+        }
+        .sec th{
+            text-align: left;
+        }
+        .sec td{
+            text-align: center;
+            border-color: inherit;
+            border-style:dotted;
+            border-right-style: none;
+            border-width: 1px;
+        }
+        tr.sec:hover{
+            background-color: aqua;
+        }
+        #fio{
+            min-width:201px;
+        }
+        #pol{
+            min-width:40px;
+        }
+        #dol{
+            min-width:92px;
+        }
+        #data{
+            min-width:83px;
+        }
+        #dn1{
+            min-width:92px;
+        }
+        #dn2{
+            min-width:92px;
+        }
+        .btn{
+            background-color: rgb(0, 140, 255);
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="main">
+            <th id="fio">ФИО</th>
+            <th id="pol">пол</th>
+            <th id="dol">должность</th>
+            <th id="data">дата рож.</th>
+            <th id="dn1">Данные 01</th>
+            <th id="dn2">Данные 02</th>
+        </tr>
+        <tr class="sec 1">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr class="sec 2">
+            <th><div>Петрова Илонна Петровна</div></th>
+            <td><div>Ж</div></td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr class="sec 3">
+            <th>Сидоров Илья Игоревич</th>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr class="sec 4">
+            <th>Пупин Федор Федорович</th>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>1811899</td>
+            <td>48151889</td>
+        </tr>
+        <tr class="sec 5">
+            <th>Крупин Сергей Иванович</th>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>183899</td>
+            <td>98919</td>
+        </tr>
+    </table>
+
+    <div class="btn">Показать все строки</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+        crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function($){
+            $('.1').on('click', function(){
+                $('.1').css("display", "none");
+            })
+            $('.2').on('click', function(){
+                $('.2').css("display", "none");
+            })
+            $('.3').on('click', function(){
+                $('.3').css("display", "none");
+            })
+            $('.4').on('click', function(){
+                $('.4').css("display", "none");
+            })
+            $('.5').on('click', function(){
+                $('.5').css("display", "none");
+            })
+        });
+        $(document).ready(function($){
+            $('.btn').on('click',function(){
+                $('.sec').css("display", "table-row");
+            })
+        });
+    </script>
+</body>
+</html>

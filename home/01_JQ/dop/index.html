@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 2px solid rgb(100, 100, 100);
+            width: 390px;
+            height: 100px;
+            padding: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+    <div>
+        <input type="text" id="ps1" class="pw">* Пароль
+        <input type="text" id="ps2" class="pw">* Повторите пароль
+        <input type="button" value="Отправить" id="clk">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function($){
+            $('.pw').keyup( function(){
+                if($('#ps1').val() == $('#ps2').val())
+                    $('.pw').css('backgroundColor', 'green')
+                else
+                $('.pw').css('backgroundColor', 'red')
+            })
+        });
+    </script>
+</body>
+</html>
